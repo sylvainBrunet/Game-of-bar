@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context=".GameDetailActivity"
+    android:paddingHorizontal="16dp"
+    android:fitsSystemWindows="true">
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/descriptionViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/game_detail_background"
+        app:layout_constraintBottom_toTopOf="@+id/playersViewDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siRadius="10dp"
+        app:siSquare="false" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/imageDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionViewDetails"
+        app:layout_constraintStart_toStartOf="@+id/descriptionViewDetails"
+        app:layout_constraintTop_toTopOf="@+id/descriptionViewDetails"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.3"
+        app:siRadius="10dp"
+        app:siSquare="true" />
+
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/playersViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/descriptionViewDetails"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/game_detail_background"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLetsDrink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionViewDetails"
+        app:siRadius="10dp"
+        app:siSquare="false" />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/playerList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFF"
+            app:layout_constraintBottom_toBottomOf="@+id/playersViewDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlayer" android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="60dp"
+        android:hint="@string/details_edittext_hint"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAddPlayer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/playersViewDetails"
+        app:layout_constraintTop_toTopOf="@+id/playersViewDetails" />
+
+    <Button
+        android:id="@+id/buttonAddPlayer"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/textDescriptionDetails"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/baseline_add_white_24"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/playerList"
+        app:layout_constraintTop_toTopOf="@+id/playersViewDetails" />
+
+    <Button
+            android:id="@+id/buttonLetsDrink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round_corner"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/details_button_startgame"
+            android:textColor="@color/buttonBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/playersViewDetails"/>
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:alpha="0.5"
+            android:text="Swipe to Delete"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerList"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="@+id/playersViewDetails"/>
+
+
+    <TextView
+        android:id="@+id/textDescriptionDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionViewDetails"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionViewDetails"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageDetails"
+        app:layout_constraintTop_toTopOf="@+id/descriptionViewDetails"
+        app:layout_constraintVertical_bias="0.513" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+

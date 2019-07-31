@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Game of bar</string>
+    <string name="details_title">Game details</string>
+    <string name="details_edittext_hint">Ajouter un joueur</string>
+    <string name="details_button_add">+</string>
+    <string name="details_button_startgame">Let\'s drink</string>
+    <string name="store">BOUTIQUE</string>
+    <string name="my_games">MES JEUX</string>
+    <string name="full_app_name">Game Of Bar</string>
+    <string name="version">1</string>
+</resources>

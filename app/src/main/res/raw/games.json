@@ -1,0 +1,240 @@
+[
+  {
+    "id": 1,
+    "price": 0,
+    "title": "Before",
+    "description": "Un petit jeu pour le before, pour bien commencer la soirée 😊",
+    "type": 0,
+    "version": "0.0.1",
+    "questions_number": [
+      {
+        "type": 0,
+        "number": 10
+      },
+      {
+        "type": 1,
+        "number": 5
+      },
+      {
+        "type": 3,
+        "number": 5
+      },
+      {
+        "type": 4,
+        "number": 2
+      },
+      {
+        "type": 5,
+        "number": 5
+      },
+      {
+        "type": 6,
+        "number": 2
+      },
+      {
+        "type": 7,
+        "number": 3
+      },
+      {
+        "type": 8,
+        "number": 0
+      },
+      {
+        "type": 9,
+        "number": 2
+      }
+    ],
+    "preview": [
+      {
+        "preview": "Sylvain, bois 2 gorgées sans les mains"
+      },
+      {
+        "preview": "Ceux qui arrivent à toucher leur nez avec leur langue distribuent 3 gorgées"
+      },
+      {
+        "preview": "Sylvain parle avec un accent Belge jusqu'à nouvel ordre"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "price": 0.99,
+    "title": "Barbu",
+    "description": "Chaque joueur tire une carte et chaque carte à une signification. Attachez bien votre foie, vous allez en avoir bien besoin !",
+    "type": 1,
+    "version": "0.0.1",
+    "questions_number": [],
+    "preview": [
+      {
+        "preview": "Sylvain tu es le maître des questions, à chaque fois que tu poses une question et qu'un joueur te répond, il boit 1 gorgée"
+      },
+      {
+        "preview": "Sylvain est le roi des pouces. Dès que tu poses ton pouce sur ton front, le dernier des joueurs l’ayant fait boit 2 gorgées"
+      },
+      {
+        "preview": "Dans ma valise, Sylvain doit dire « dans ma valise j’ai ...» Puis le suivant doit répéter, en rajoutant un mot. 2 gorgées pour le perdant"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "price": 0.99,
+    "title": "Ynov",
+    "description": "Jeu de carte, en mode Ynov !",
+    "type": 1,
+    "version": "0.0.1",
+    "questions_number": [],
+    "preview": [
+      {
+        "preview": "Sylvain, fait un bisous dans le cou à Benjamin sinon bois 3 gorgées"
+      },
+      {
+        "preview": "Si vous êtes à la Kolok, Sylvain va chercher des cacahuètes ! Et en prime bois 3 gorgées"
+      },
+      {
+        "preview": "Si tu es en B1 tu bois 3 gorgées"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "price": 0.99,
+    "title": "GrosPoulet",
+    "description": "Le gros poulet est un jeu de dés très amusant car il évolue au fur et à mesure que l'on y joue. ",
+    "type": 2,
+    "version": "0.0.1",
+    "questions_number": [],
+    "preview": [
+      {
+        "preview": "Le gros poulet bois 1 gorgée"
+      },
+      {
+        "preview": "TU ES LE GROS POULET"
+      },
+      {
+        "preview": "Le dernier à crier gros poulet avec sont pouce sur son front bois 1 gorgée"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "price": 0.99,
+    "title": "Viking",
+    "description": "Jeu de 52 cartes. Variante du barbu avec beaucoup de mini jeux !",
+    "type": 1,
+    "version": "0.0.1",
+    "questions_number": [],
+    "preview": [
+      {
+        "preview": "Sylvain est le Roi monarque ! Tous ensemble, vous devez boire jusqu'à que votre voisin de droite s'arrête. Le Roi est donc le premier à décider de s'arrêter, dès qu'il pose son verre c'est son voisin qui devient le roi."
+      },
+      {
+        "preview": "Le dernier qui tape son voisin de droite boit 3 gorgées"
+      },
+      {
+        "preview": "Sylvain, si tu bois une gorgée dans le verre de tous le monde, tu pourras les redistribuer"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "price": 0.99,
+    "title": "Hot",
+    "description": "Attention ça va être chaud ! Et peut-être un peu gênant vous êtes prévenus !",
+    "type": 0,
+    "version": "0.0.1",
+    "questions_number": [
+      {
+        "type": 10,
+        "number": 20
+      },
+      {
+        "type": 0,
+        "number": 5
+      },
+      {
+        "type": 3,
+        "number": 5
+      }
+    ],
+    "preview": [
+      {
+        "preview": "Sylvain, si tu as déjà couché avec l'ex d'un de tes potes bois 3 gorgées tu le mérite !"
+      },
+      {
+        "preview": "Plutôt femme soumise ou femme dominatrice ? Votez tous en même temps. Les perdants boivent 2 gorgées"
+      },
+      {
+        "preview": "Sylvain, raconte le pire râteau que tu as eu. Si tu as trop honte bois 2 gorgées"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "price": 0.99,
+    "title": "Qui pourrait ?",
+    "description": "Une fois la question posée, tous les joueurs comptent jusqu'à trois et pointent du doigt un des joueurs, celui qui leur semble être le plus à même de réaliser ce que demande la question. Les joueurs pointés doivent boire le nombre de gorgées qui correspond au nombre de personnes qui les ont désignés.",
+    "type": 0,
+    "version": "0.0.1",
+    "questions_number": [
+      {
+        "type": 11,
+        "number": 20
+      }
+    ],
+    "preview": [
+      {
+        "preview": "Qui pourrait tromper sa / son partenaire ?"
+      },
+      {
+        "preview": "Qui pourrait vomir en boite ?"
+      },
+      {
+        "preview": "Qui pourrait vaincre Voldemort ?"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "price": 0.99,
+    "title": "BarJack",
+    "description": "Vous connaissez le black jack, nous vous proposons le bar jack. \nObjectif : arriver à 21 !",
+    "type": 3,
+    "version": "0.0.1",
+    "questions_number": [],
+    "preview": []
+  },
+  {
+    "id": 9,
+    "price": 1.99,
+    "title": "Tu préfères",
+    "description": "Tout le monde connait le principe. Vous avez deux choix, tout les deux quasiment impossible à choisir, mais pourtant il faut en choisir un !",
+    "type": 4,
+    "version": "0.0.1",
+    "questions_number": [
+      {
+        "type": 9,
+        "number": 20
+      },
+      {
+        "type": 12,
+        "number": 8
+      },
+      {
+        "type": 13,
+        "number": 2
+      }
+    ],
+    "preview": [
+      {
+        "preview": "Plutôt Jul ou Maitre Gims ?"
+      },
+      {
+        "preview": "Pour un coup d’un soir, plutôt tendre ou violent ?"
+      },
+      {
+        "preview": "Plutôt s’asseoir sur un pénis et manger un gâteau ou s’asseoir sur un gâteau et sucer un pénis ?"
+      }
+    ]
+  }
+]

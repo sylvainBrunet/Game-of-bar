@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#5C7DE9</color>
+    <color name="red">#e74c3c</color>
+    <color name="light_grey">#95A5A6</color>
+    <color name="black">#000</color>
+    <color name="ui_red">#FF2D55</color>
+    <color name="primary">#D81B80</color>
+    <color name="orange">#ff9521</color>
+    <color name="bleu">#21A3AA</color>
+    <color name="redCard">#E70100</color>
+    <color name="qtype0">#3498db</color>
+    <color name="qtype1">#2ecc71</color>
+    <color name="qtype2">#e74c3c</color>
+    <color name="qtype3">#f1c40f</color>
+    <color name="qtype4">#1abc9c</color>
+    <color name="qtype5">#9C27B0</color>
+    <color name="qtype6">#FF9800</color>
+    <color name="qtype7">#2196F3</color>
+    <color name="qtype8">#3F51B5</color>
+    <color name="qtype9">#4a69bd</color>
+    <color name="qtype10">#FE2C55</color>
+    <color name="qtype12">#2C3E50</color>
+    <color name="barjack">#5ab679</color>
+    <color name="buttonBackground">#FF6347</color>
+
+
+
+
+</resources>

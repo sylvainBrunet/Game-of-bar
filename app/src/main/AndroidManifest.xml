@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.gambapp.gob">
+
+    <uses-permission android:name="com.android.vending.BILLING"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher_gob_v2"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_gob_v2_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <service
+                android:name=".services.MyFirebaseMessagingService"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".PrefereActivity">
+        </activity>
+        <activity android:name=".BarJackActivity"/>
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name=".MainActivity"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".GameDetailActivity"
+                android:parentActivityName=".MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.ActionBar"
+                android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+                android:name=".GameActivity"
+                android:parentActivityName=".GameDetailActivity"
+                android:screenOrientation="landscape"/>
+        <activity
+                android:name=".DiceGameActivity"
+                android:parentActivityName=".GameDetailActivity"
+                android:screenOrientation="portrait"/>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+
+        <activity
+                android:name=".EndGameActivity"
+                android:parentActivityName=".MainActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".CardGameActivity"
+                android:parentActivityName=".GameDetailActivity"
+                android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

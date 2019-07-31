@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/full_app_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/my_games"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/rv_games_listConstraint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/store"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_games_listConstraint" />
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/rv_games_listConstraint"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="0dp"
+                                                 android:orientation="vertical"
+                                                 app:layout_constraintHeight_percent="0.2"
+
+                                                 app:layout_constraintTop_toBottomOf="@id/textView2"
+                                                 tools:context=".MainActivity"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_games_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="4dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+                android:id="@+id/restore"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Restorer mes achats"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/light_grey"
+                android:fontFamily="@font/roboto_black"
+
+
+        />
+
+        <Button
+                android:id="@+id/unlockGame"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Debloquer un jeu"
+                android:textSize="14sp"
+                android:layout_marginStart="0dp"
+                android:textColor="@color/light_grey"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto_black"
+
+                android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/bottom_panel">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imageDetails2"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:scaleType="centerCrop"
+                android:layout_marginBottom="4dp" app:layout_constraintBottom_toTopOf="@+id/imageDetails4"
+                android:layout_marginEnd="4dp"
+                app:siRadius="10dp"
+                android:src="@drawable/img_1"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails2"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/imageDetails"
+                android:layout_marginStart="4dp" android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageDetails3" android:scaleType="centerCrop"
+                app:siRadius="10dp"
+                android:src="@drawable/img_1"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails3"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageDetails2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/imageDetails4"
+                android:scaleType="centerCrop" android:layout_marginStart="4dp" android:layout_weight="1"
+                app:siRadius="10dp"
+                android:src="@drawable/img_1"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails4"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageDetails" app:layout_constraintVertical_bias="1.0"
+                android:scaleType="centerCrop" app:layout_constraintEnd_toStartOf="@+id/imageDetails3"
+                android:layout_marginEnd="4dp" app:siRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent" android:src="@drawable/img_1"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetailsOverLay" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imageDetails2OverLay"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:scaleType="centerCrop"
+                android:layout_marginBottom="4dp" app:layout_constraintBottom_toTopOf="@+id/imageDetails4OverLay"
+                android:layout_marginEnd="4dp"
+                app:siRadius="10dp"
+                android:src="@drawable/four_rounded_corner"
+                android:layout_marginStart="8dp"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails2OverLay"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/imageDetailsOverLay"
+                android:layout_marginStart="4dp" android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageDetails3OverLay" android:scaleType="centerCrop"
+                app:siRadius="10dp"
+                android:src="@drawable/four_rounded_corner"
+                android:cropToPadding="true"/>
+        <TextView
+                android:id="@+id/gameTitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageDetails2OverLay"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageDetails2OverLay"
+                app:layout_constraintTop_toTopOf="@+id/imageDetails2OverLay"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/imageDetails2OverLay"
+                app:layout_constraintVertical_bias="0.56"/>
+        <TextView
+                android:id="@+id/gamePrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetails2OverLay"
+                app:layout_constraintEnd_toEndOf="@+id/gameTitle2"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/gameTitle2"
+                app:layout_constraintTop_toBottomOf="@+id/gameTitle2" />
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails3OverLay"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageDetails2OverLay"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/imageDetails4OverLay"
+                android:scaleType="centerCrop" android:layout_weight="1"
+                app:siRadius="10dp"
+                app:siSquare="true" android:src="@drawable/four_rounded_corner"
+                android:layout_marginStart="4dp"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/imageDetails4OverLay" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageDetailsOverLay" app:layout_constraintVertical_bias="1.0"
+                android:scaleType="centerCrop" app:layout_constraintEnd_toStartOf="@+id/imageDetails3OverLay"
+                android:layout_marginEnd="4dp" app:siRadius="10dp"
+                app:siSquare="true" android:src="@drawable/four_rounded_corner"
+        />
+        <TextView
+                android:id="@+id/gameTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetailsOverLay"
+                app:layout_constraintEnd_toEndOf="@+id/imageDetailsOverLay"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageDetailsOverLay"
+                app:layout_constraintTop_toTopOf="@+id/imageDetailsOverLay"
+                app:layout_constraintVertical_bias="0.563"/>
+
+        <TextView
+                android:id="@+id/gamePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetailsOverLay"
+                app:layout_constraintEnd_toEndOf="@+id/gameTitle"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/gameTitle"
+                app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
+
+        <TextView
+                android:id="@+id/gameTitle3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetails3OverLay"
+                app:layout_constraintEnd_toEndOf="@+id/imageDetails3OverLay"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageDetails3OverLay"
+                app:layout_constraintTop_toTopOf="@+id/imageDetails3OverLay"
+                app:layout_constraintVertical_bias="0.548"/>
+
+        <TextView
+                android:id="@+id/gamePrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetails3OverLay"
+                app:layout_constraintEnd_toEndOf="@+id/gameTitle3"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/gameTitle3"
+                app:layout_constraintTop_toBottomOf="@+id/gameTitle3"
+        />
+
+        <TextView
+                android:id="@+id/gameTitle4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetails4OverLay"
+                app:layout_constraintEnd_toEndOf="@+id/imageDetails4OverLay"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageDetails4OverLay"
+                app:layout_constraintTop_toTopOf="@+id/imageDetails4OverLay"
+                app:layout_constraintVertical_bias="0.548"/>
+
+        <TextView
+                android:id="@+id/gamePrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageDetails4OverLay"
+                app:layout_constraintEnd_toEndOf="@+id/gameTitle4"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="@+id/gameTitle4"
+                app:layout_constraintTop_toBottomOf="@+id/gameTitle4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
